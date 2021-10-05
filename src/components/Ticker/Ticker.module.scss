@@ -1,0 +1,16 @@
+@import '_colours';
+
+.tickerShell {
+    align-self: stretch;
+    display: flex;
+    border: 1px solid $border-color;
+    padding: 60px;
+
+    .timeIsUp {
+        flex: 1;
+        text-align: center;
+        font-size: 3.5rem;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+}

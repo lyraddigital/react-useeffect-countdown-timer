@@ -1,0 +1,21 @@
+@import 'colours';
+
+.pageContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 790px;
+  color: $text-color;
+
+  h1 {
+    font-size: 5.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 2.3rem;
+  }
+  
+  p {
+    margin-bottom: 1.8rem;
+  }
+}

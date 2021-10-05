@@ -1,0 +1,14 @@
+.tickerCell {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    > .tickerCellValue {
+        font-size: 7rem;
+    }
+    
+    > .tickerCellLabel {
+        font-style: italic;
+    }
+}
