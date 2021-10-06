@@ -1,11 +1,15 @@
 import { TickerCell } from 'components/TickerCell';
 import { TickerSeparator } from 'components/TickerSeparator';
-import { useTicker } from 'hooks';
 
 import style from './Ticker.module.scss';
 
-export const Ticker = ({ futureDate }) => {
-    const { days, hours, minutes, seconds, isTimeUp } = useTicker(futureDate);
+export const Ticker = () => {
+    const days = 6;
+    const hours = 22;
+    const minutes = 40;
+    const seconds = 0;
+    const isTimeUp = false;
+
     const tickerContents = isTimeUp ? (
         <div className={ style.timeIsUp }>Time is up!!!</div>
     ) : (

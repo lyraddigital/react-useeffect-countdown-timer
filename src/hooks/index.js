@@ -1,1 +1,0 @@
-export { useTicker } from './useTicker';
