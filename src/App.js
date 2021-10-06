@@ -2,8 +2,7 @@ import { Ticker } from 'components/Ticker';
 
 import style from './App.module.scss';
 
-// Defaults to 6 days, 22 hours, 40 minutes and 0 seconds from now in your timezone.
-const futureDate = new Date((new Date()).getTime() + (600000000));
+const futureDate = new Date();
 
 function App() {  
   return (
