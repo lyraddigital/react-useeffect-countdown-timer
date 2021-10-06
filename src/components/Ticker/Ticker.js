@@ -1,6 +1,5 @@
 import { intervalToDuration, isBefore } from 'date-fns';
 
-
 import { TickerCell } from 'components/TickerCell';
 import { TickerSeparator } from 'components/TickerSeparator';
 
@@ -21,9 +20,9 @@ export const Ticker = ({ futureDate }) => {
         });
 
         days = duration.days;
-        hours = duration.days;
-        minutes = duration.days;
-        seconds = duration.days;
+        hours = duration.hours;
+        minutes = duration.minutes;
+        seconds = duration.seconds;
     }
 
     const tickerContents = isTimeUp ? (
