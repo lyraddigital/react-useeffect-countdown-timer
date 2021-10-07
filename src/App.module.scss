@@ -18,4 +18,29 @@
   p {
     margin-bottom: 1.8rem;
   }
+
+  .toggleButton {
+    padding: 2rem;
+    font-size: 1.8rem;
+    margin-top: 2.5rem;
+    border: 1px solid $button-border-color;
+    background: $button-background-color;
+    border-radius: 3rem;
+    text-transform: uppercase;
+    color: $button-text-color;
+    font-weight: 600;
+    cursor: pointer;
+
+    &:hover {
+      border: 1px solid $button-hover-border-color;
+      background: $button-hover-background-color;
+      color: $button-hover-text-color;
+    }
+
+    &:active {
+      border: 1px solid $button-active-border-color;
+      background: $button-active-background-color;
+      color: $button-active-text-color;
+    }
+  }
 }

@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { add } from 'date-fns';
 
 import { Ticker } from 'components/Ticker';
@@ -11,12 +12,22 @@ const futureDate = add(new Date(), {
   minutes: 40
 });
 
-function App() {  
+function App() {
+  const [tickerVisible, setTickerVisible] = useState(false);
+  const tickerEl = tickerVisible ? <Ticker futureDate={futureDate} /> : null;
+  const toggleText = tickerVisible ? 'Hide Countdown': 'Show Countdown';
+
   return (
     <div className={ style.pageContainer }>
       <h1>Join Our Event</h1>
       <p>Come check out our great event. It will be lots of fun.</p>
-      <Ticker futureDate={futureDate} />
+      { tickerEl }
+      <button 
+        className={ style.toggleButton } 
+        onClick={() => setTickerVisible(prev => !prev) }
+      >
+        { toggleText }
+      </button>
     </div>  
   );
 }
